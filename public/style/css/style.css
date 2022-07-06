@@ -1,0 +1,112 @@
+@keyframes bzz {
+  0% {
+    transform: translate(20px);
+  }
+  100% {
+    transform: translate(100px);
+  }
+}
+@keyframes dracoAtq {
+  0% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(30px);
+  }
+}
+@keyframes dracoanim {
+  0% {
+    transform: translateY(50px);
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
+@keyframes dracofeuanim {
+  0% {
+    transform: translate(50px);
+  }
+  100% {
+    transform: translate(10px);
+  }
+}
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.combat {
+  border: solid 5px black;
+  width: 100vh;
+  display: flex-column;
+}
+
+.fuite:hover {
+  cursor: pointer;
+}
+
+.adversaire {
+  justify-content: end;
+}
+.adversaire .colo {
+  width: 150px;
+}
+
+.team .draco {
+  width: 150px;
+}
+.team .animation {
+  animation: bzz ease-out 0.3s;
+}
+
+.animation2 {
+  animation: dracoAtq ease-out 0.1s;
+}
+
+.animation3 {
+  animation: dracoanim ease-out 0.5s;
+}
+
+.animation4 {
+  animation: dracofeuanim ease-out 0.3s;
+}
+
+.menu {
+  border: solid 2px black;
+}
+.menu .upper {
+  display: flex;
+  justify-content: space-around;
+}
+.menu .lower {
+  display: flex;
+  justify-content: space-around;
+}
+
+li:hover {
+  border: solid black;
+  cursor: pointer;
+}
+
+.def {
+  border-top: solid;
+}
+
+.atq {
+  border: solid 2px black;
+  display: none;
+}
+
+.in-item {
+  justify-content: space-around;
+  border: solid;
+  height: 10vh;
+}
+
+.utiliseAtq {
+  height: 10vh;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */
